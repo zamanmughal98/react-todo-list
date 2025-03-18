@@ -92,3 +92,53 @@
 .viewTaskItem:hover {
   transform: scale(1.2);
 }
+
+input[type='checkbox'] {
+  margin-right: 15px;
+  accent-color: #27ae60;
+  background: #fff;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+input[type='checkbox']:hover {
+  transform: scale(2.4);
+}
+input[type='checkbox']:checked {
+  accent-color: #27ae60;
+  transform: scale(2.4);
+}
+
+button {
+  background-color: #e67e22;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+#addTaskButton {
+  position: absolute;
+  right: 10px;
+}
+
+button:hover {
+  background-color: #d35400;
+  transform: scale(1.4);
+}
+button:active,
+#addTaskButton:active {
+  background: #ffecd1;
+  transform: scale(0.95);
+  color: #e74c3c;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

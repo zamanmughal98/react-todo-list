@@ -15,6 +15,7 @@ const App = () => {
           <li className="viewTaskItem" key={id}>
             <input type="checkbox" />
             {id} {title.toLocaleLowerCase()}
+            <button id="addTaskButton">Done</button>
           </li>
         ))}
       </section>
