@@ -1,17 +1,17 @@
 #root {
-    width: 100%;
-    max-width: inherit;
-    margin: 0 auto;
-    text-align: center;
-  }
+  width: 100%;
+  max-width: inherit;
+  margin: 0 auto;
+  text-align: center;
+}
 
-.createTaskContainer{
+.createTaskContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  background:#fff;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
 
@@ -20,31 +20,30 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-
 }
 
-  .title {
+.title {
   color: #e74c3c;
   text-align: center;
   font-size: 2rem;
-  }
+}
 
-  .inputField{
+.inputField {
   background: #fff;
-  color:black;
+  color: black;
   width: 100%;
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
-  }
-  .inputField:focus {
+}
+.inputField:focus {
   border: 2px solid #e74c3c;
-  }
+}
 
 .addButton {
-  background :#e67e22;
+  background: #e67e22;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -66,7 +65,7 @@
   gap: 0.5rem;
 }
 
-.viewTasksContainer{
+.viewTasksContainer {
   background-color: #ffecd1;
   border-radius: 10px;
   padding: 20px;
@@ -76,7 +75,7 @@
   margin-right: auto;
   width: 60%;
 }
-.viewTaskItem{
+.viewTaskItem {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
@@ -90,6 +89,6 @@
   margin-right: auto;
   transition: transform 0.5s;
 }
-.viewTaskItem:hover{
+.viewTaskItem:hover {
   transform: scale(1.2);
 }
