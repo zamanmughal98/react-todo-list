@@ -3,5 +3,93 @@
     max-width: inherit;
     margin: 0 auto;
     text-align: center;
-    background: #242424;
   }
+
+.createTaskContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background:#fff;
+  border-radius: 8px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+}
+
+  .title {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 2rem;
+  }
+
+  .inputField{
+  background: #fff;
+  color:black;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  }
+  .inputField:focus {
+  border: 2px solid #e74c3c;
+  }
+
+.addButton {
+  background :#e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.addButton:hover {
+  background-color: #d35400;
+  transform: scale(1.1);
+}
+.iconsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.viewTasksContainer{
+  background-color: #ffecd1;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.viewTaskItem{
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s;
+}
+.viewTaskItem:hover{
+  transform: scale(1.2);
+}
