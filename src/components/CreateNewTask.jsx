@@ -1,5 +1,5 @@
 import { FaPlus } from 'react-icons/fa';
-const CreateNewTask = ({ value, onChangeHandler }) => {
+const CreateNewTask = ({ value, onChangeHandler, onClickHandler }) => {
   return (
     <>
       <h1 className="title">React To-Do List</h1>
@@ -15,7 +15,11 @@ const CreateNewTask = ({ value, onChangeHandler }) => {
           aria-label="New Task Input"
         />
 
-        <button className="addButton" type="button" aria-label="Add Task">
+        <button
+          className="addButton"
+          type="button"
+          aria-label="Add Task"
+          onClick={onClickHandler}>
           <span className="iconsWrapper">
             Add <FaPlus />
           </span>

@@ -3,23 +3,23 @@
   max-width: inherit;
   margin: 0 auto;
   text-align: center;
+  color-scheme: light;
 }
 
 .createTaskContainer {
-  display: flex;
+  display: flex;  
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   background: #fff;
   border-radius: 8px;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
-
   padding: 20px;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -28,16 +28,22 @@
   font-size: 2rem;
 }
 
+.editInputField,
 .inputField {
   background: #fff;
   color: black;
-  width: 100%;
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
+  width:50%;
 }
+
+.inputField {
+  width: 100%;
+}
+
 .inputField:focus {
   border: 2px solid #e74c3c;
 }
@@ -49,15 +55,24 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: ease-in-out 0.5s;
   font-size: 15px;
   font-weight: 600;
+  transition: all ease-in-out 0.5s;
 }
 
 .addButton:hover {
   background-color: #d35400;
   transform: scale(1.1);
 }
+
+.addButton:active {
+  background: #ffecd1;
+  transform: scale(0.95);
+  color: #e74c3c;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .iconsWrapper {
   display: flex;
   justify-content: center;
@@ -75,6 +90,7 @@
   margin-right: auto;
   width: 60%;
 }
+
 .viewTaskItem {
   background-color: #fff;
   border-radius: 12px;
@@ -87,50 +103,55 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 0.5s;
+  transition: all ease-in-out 0.7s;
+
 }
 .viewTaskItem:hover {
   transform: scale(1.2);
 }
 
-input[type='checkbox'] {
+.checkbox {
   margin-right: 15px;
   accent-color: #27ae60;
   background: #fff;
   color: #fff;
-  transform: scale(1.2);
+  transition: all ease-in-out 0.5s;
+
 }
 
-input[type='checkbox']:hover {
+.checkbox:hover {
   transform: scale(2.4);
 }
-input[type='checkbox']:checked {
+.checkbox:checked {
   accent-color: #27ae60;
   transform: scale(2.4);
 }
 
-button {
+.taskBtnPosition {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap:20px;
+}
+
+.taskButtons {
   background-color: #e67e22;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
-}
-#addTaskButton {
-  position: absolute;
-  right: 10px;
+  transition: ease-in-out 0.5s;
+
 }
 
-button:hover {
-  background-color: #d35400;
-  transform: scale(1.4);
+.taskButtons:hover {
+  background-color: #d3540081;
+  transform: scale(1.2);
 }
-button:active,
-#addTaskButton:active {
+
+.taskButtons:active,
+.addTaskButton:active {
   background: #ffecd1;
   transform: scale(0.95);
   color: #e74c3c;
@@ -138,7 +159,20 @@ button:active,
   font-weight: 600;
 }
 
-button:disabled {
+.taskButtons:disabled {
+  transform: scale(1);
+
   background-color: gray;
   cursor: not-allowed;
+}
+
+.taskButtons:disabled:hover {
+  transform: scale(1);
+  cursor: not-allowed;
+}
+
+.taskButtons:disabled:active {
+  background: gray;
+  transform: scale(1);
+  color: gray;
 }
