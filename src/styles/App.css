@@ -7,7 +7,7 @@
 }
 
 .createTaskContainer {
-  display: flex;  
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
-  width:50%;
+  width: 50%;
 }
 
 .inputField {
@@ -104,7 +104,6 @@
   margin-left: auto;
   margin-right: auto;
   transition: all ease-in-out 0.7s;
-
 }
 .viewTaskItem:hover {
   transform: scale(1.2);
@@ -116,7 +115,6 @@
   background: #fff;
   color: #fff;
   transition: all ease-in-out 0.5s;
-
 }
 
 .checkbox:hover {
@@ -131,7 +129,7 @@
   position: absolute;
   right: 10px;
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
 
 .taskButtons {
@@ -142,7 +140,6 @@
   border-radius: 5px;
   cursor: pointer;
   transition: ease-in-out 0.5s;
-
 }
 
 .taskButtons:hover {
