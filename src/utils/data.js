@@ -5,5 +5,5 @@ export const ToDoListData = [
   { id: 4, title: 'water the plants', isCompleted: false },
   { id: 5, title: 'call mom', isCompleted: false },
   { id: 6, title: 'clean the room', isCompleted: false },
-  { id: 7, title: 'go for a walk', isCompleted: false },
+  { id: 7, title: 'go for a walk', isCompleted: true },
 ];

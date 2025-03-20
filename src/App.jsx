@@ -1,7 +1,7 @@
 import './styles/App.css';
 import { useState } from 'react';
 
-import { ToDoListData } from './components/data.js';
+import { ToDoListData } from './utils/data.js';
 import CreateNewTask from './components/CreateNewTask';
 import TasksContainer from './components/TasksContainer.jsx';
 
@@ -30,8 +30,12 @@ const App = () => {
       return;
     }
 
+    const NextId = tasksList.length
+      ? tasksList[tasksList.length - 1].id + 1
+      : 1;
+
     const newTaskObj = {
-      id: tasksList[tasksList.length - 1]?.id + 1,
+      id: NextId,
       title: newTask.trim(),
       isCompleted: false,
     };
